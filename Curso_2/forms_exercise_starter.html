@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    <title>Forms Exercise</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center display-2">Part 1</h1>
+        <!-- Write your first form here -->
+
+        <div class="container">
+            <h4>Billing Address</h4>
+            <form>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" for="name" class="form-control" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">@</span>
+                        </div>
+                        <input type="text" id="username" class="form-control" placeholder="Username" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label id="email">Email <span class="text-muted">(Optional)</span></label>
+                    <input type="email" for="email" class="form-control" placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" for="address" class="form-control" placeholder="123 Market St." required>
+                </div>
+                <div class="form-group">
+                    <label id="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+                    <input type="text" for="address2" class="form-control" placeholder="Apartment or Suite">
+                </div>
+                <div class="form-group">
+                    <label id="notes">Special Notes <span class="text-muted">(Optional)</span></label>
+                    <textarea name="notes" class="form-control" rows="3"></textarea>
+                    <small class="text-muted">Include any special requests you have for us!</small>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                    <input class="custom-control-input" type="checkbox" id="option1">
+                    <label class="custom-control-label" for="option1">Shipping address is same as billing</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input class="custom-control-input" type="checkbox" id="option2">
+                    <label class="custom-control-label" for="option2">Save my info for next time</label>
+                </div>
+                <hr>
+
+                <h4>Shipping Options</h4>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="options" id="op1">
+                    <label class="custom-control-label" for="op1">Same Day Shipping</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="options" id="op2">
+                    <label class="custom-control-label" for="op2">Next Day Shipping</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="options" id="op3">
+                    <label class="custom-control-label" for="op3">3-5 Busissnes Days</label>
+                </div>
+
+                <input type="submit" value="Continue To Checkout" class="btn btn-primary btn-lg btn-block my-3">
+            </form>
+        </div>
+    </div>
+
+
+    <h1 class="text-center display-2">Part 2</h1>
+    <div class="container border rounded p-5 mb-5" style="max-width: 400px;">
+        <h3 class="text-center mb-4">Sign In</h3>
+        <form>
+            <div class="form-group">
+                <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+            </div>
+            <div class="custom-control custom-checkbox form-group">
+                <input class="custom-control-input" type="checkbox" id="remember">
+                <label class="custom-control-label" for="remember">Remember me</label>
+            </div>
+            <input type="submit" value="Sign In" class="btn btn-primary btn-lg btn-block">
+            <p class="text-center m-2">Not a member? <a href="#" class="text-info">Register</a></small>
+        </form>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

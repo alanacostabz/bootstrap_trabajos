@@ -1,0 +1,10 @@
+// customize colors
+$theme-colors: (
+  "primary": #9C27B0,
+  "secondary": #607D8B,
+  "success": #4CAF50,
+  "warning": #ff9800
+);
+
+// import bootstrap
+@import "../bootstrap-4.3.1/scss/bootstrap";
